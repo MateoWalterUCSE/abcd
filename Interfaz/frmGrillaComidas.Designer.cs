@@ -49,7 +49,7 @@
             this.Momento,
             this.Saludable});
             this.dgvComida.Location = new System.Drawing.Point(22, 50);
-            this.dgvComida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvComida.Margin = new System.Windows.Forms.Padding(2);
             this.dgvComida.Name = "dgvComida";
             this.dgvComida.RowHeadersWidth = 51;
             this.dgvComida.RowTemplate.Height = 24;
@@ -88,7 +88,7 @@
             // btAceptar
             // 
             this.btAceptar.Location = new System.Drawing.Point(505, 232);
-            this.btAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btAceptar.Name = "btAceptar";
             this.btAceptar.Size = new System.Drawing.Size(85, 27);
             this.btAceptar.TabIndex = 2;
@@ -115,7 +115,7 @@
             "Merienda",
             "Cena"});
             this.cbFiltro.Location = new System.Drawing.Point(655, 232);
-            this.cbFiltro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbFiltro.Margin = new System.Windows.Forms.Padding(2);
             this.cbFiltro.Name = "cbFiltro";
             this.cbFiltro.Size = new System.Drawing.Size(144, 21);
             this.cbFiltro.TabIndex = 4;
@@ -135,7 +135,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Location = new System.Drawing.Point(803, 232);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(49, 19);
             this.btnLimpiar.TabIndex = 6;
@@ -146,7 +146,7 @@
             // dataTFechaComida
             // 
             this.dataTFechaComida.Location = new System.Drawing.Point(496, 32);
-            this.dataTFechaComida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataTFechaComida.Margin = new System.Windows.Forms.Padding(2);
             this.dataTFechaComida.Name = "dataTFechaComida";
             this.dataTFechaComida.Size = new System.Drawing.Size(226, 20);
             this.dataTFechaComida.TabIndex = 7;
@@ -164,7 +164,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.dgvComida);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmGrillaComidas";
             this.ShowInTaskbar = false;
             this.Text = "frmGrillaComidas";

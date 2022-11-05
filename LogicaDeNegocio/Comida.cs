@@ -13,7 +13,9 @@ namespace Logica
         public Receta ComidaElegida { get; set; } //Receta ya creada
         public DateTime Fecha { get; set; }
 
+        public void IngresarComida(int CodigoReceta)
+        {
 
-
+        }
     }
 }

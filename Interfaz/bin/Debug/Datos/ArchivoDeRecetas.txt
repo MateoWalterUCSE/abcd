@@ -1,1 +1,1 @@
-[{"Id":"1","Momento":1,"Saludable":true,"Nombre":"TARTA DE MANZANA","Ingredientes":[{"CodigoIngrediente":"1","Cantidad":2}],"ID":null,"despensa":null}]
+[{"Id":"1","Momento":1,"Saludable":true,"Nombre":"TARTA DE MANZANA","Ingredientes":[{"CodigoIngrediente":"1","Cantidad":2},{"CodigoIngrediente":"1","Cantidad":2}],"ID":null,"despensa":null},{"Id":"2","Momento":3,"Saludable":true,"Nombre":"Pastel de Chocolate","Ingredientes":[{"CodigoIngrediente":"1","Cantidad":2},{"CodigoIngrediente":"1","Cantidad":2}],"ID":null,"despensa":null}]

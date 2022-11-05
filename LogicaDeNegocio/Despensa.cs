@@ -410,6 +410,13 @@ namespace Logica
             CodigosCantidades.Add(codigoCantidad);
             Receta receta1 = new Receta("1", Receta.MomentoComida.Almuerzo, true, "TARTA DE MANZANA", 3, CodigosCantidades);
             ListaDeRecetas.Add(receta1);
+
+            CodigoCantidad codigoCantidad2 = new CodigoCantidad();
+            codigoCantidad.CodigoIngrediente = "1";
+            codigoCantidad.Cantidad = 2;
+            CodigosCantidades.Add(codigoCantidad);
+            Receta receta2 = new Receta("2", Receta.MomentoComida.Cena, true, "Pastel de Chocolate", 2, CodigosCantidades);
+            ListaDeRecetas.Add(receta2);
             GuardarReceta();
 
             

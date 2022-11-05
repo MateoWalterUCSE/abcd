@@ -35,7 +35,7 @@
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Momento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecetas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,9 +55,11 @@
             this.dgvRecetas.RowTemplate.Height = 24;
             this.dgvRecetas.Size = new System.Drawing.Size(677, 258);
             this.dgvRecetas.TabIndex = 4;
+            this.dgvRecetas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRecetas_CellContentClick);
             // 
             // ButtonElegirReceta
             // 
+            this.ButtonElegirReceta.Enabled = false;
             this.ButtonElegirReceta.Location = new System.Drawing.Point(320, 328);
             this.ButtonElegirReceta.Name = "ButtonElegirReceta";
             this.ButtonElegirReceta.Size = new System.Drawing.Size(196, 46);
@@ -77,6 +79,7 @@
             // 
             // ElegirReceta
             // 
+            this.ElegirReceta.DataPropertyName = "ElegirReceta";
             this.ElegirReceta.HeaderText = "Elegir Receta";
             this.ElegirReceta.Name = "ElegirReceta";
             // 
@@ -106,9 +109,11 @@
             // Tipo
             // 
             this.Tipo.DataPropertyName = "Saludable";
-            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.HeaderText = "Saludable";
             this.Tipo.Name = "Tipo";
             this.Tipo.ReadOnly = true;
+            this.Tipo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Tipo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // frmAltaComida
             // 
@@ -138,6 +143,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Momento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Tipo;
     }
 }
