@@ -11,3 +11,16 @@ C:\Users\Liliana\Desktop\D\ucse-2022-prog1-instansClass\WindowsForms1.0\LogicaDe
 C:\Users\Liliana\Desktop\D\ucse-2022-prog1-instansClass\WindowsForms1.0\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.csproj.CopyComplete
 C:\Users\Liliana\Desktop\D\ucse-2022-prog1-instansClass\WindowsForms1.0\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.dll
 C:\Users\Liliana\Desktop\D\ucse-2022-prog1-instansClass\WindowsForms1.0\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.pdb
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\LogicaDeNegocio.dll
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\LogicaDeNegocio.pdb
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.dll
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.pdb
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.xml
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Usuario\mateo\abcd\LogicaDeNegocio\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Usuario\mateo\abcd\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.csproj.AssemblyReference.cache
+D:\Usuario\mateo\abcd\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.csproj.CoreCompileInputs.cache
+D:\Usuario\mateo\abcd\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.csproj.CopyComplete
+D:\Usuario\mateo\abcd\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.dll
+D:\Usuario\mateo\abcd\LogicaDeNegocio\obj\Debug\LogicaDeNegocio.pdb

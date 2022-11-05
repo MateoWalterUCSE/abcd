@@ -208,7 +208,7 @@ namespace Logica
             ListaDeProductos[indiceDeProductoADescontar].Stock = stockDescontado.ToString();
             ListaDeSupermercado.RemoveAt(indiceListaADescontraEnSuper);
             GuardarProducto();
-            GuardarSuper();
+            
         }
         public List<Comida> FiltrarComidaPorMomento(MomentoComida momento)
         {
@@ -303,7 +303,7 @@ namespace Logica
             //ListaDeSupermercado.Add(Id);
             //ListaDeProductos.RemoveAt(indiceDeElementoEnListaProducto);
             GuardarProducto();
-            GuardarSuper();
+            
         }
 
 
@@ -333,25 +333,7 @@ namespace Logica
             }
         }
 
-
-        public void GuardarSuper()
-        {
-            List<Bebida> ProductosPorBebida = RellenarListaSegunXBebida(ListaDeProductos);
-            List<PorCantidad> ProductosPorCantidad = RellenarListaSegunXCantidad(ListaDeProductos);
-            List<PorKilo> ProductosPorKilo = RellenarListaSegunXKilo(ListaDeProductos);
-            List<PorLitro> ProductosPorLitro = RellenarListaSegunXLitro(ListaDeProductos);
-            //lista
-            Escribir(RUTA + ArchivoProductosBajoStock, EscribirListaTipo(ProductosPorBebida));
-            Escribir(RUTA + ArchivoProductosBajoStock, EscribirListaTipo(ProductosPorCantidad));
-            Escribir(RUTA + ArchivoProductosBajoStock, EscribirListaTipo(ProductosPorKilo));
-            Escribir(RUTA + ArchivoProductosBajoStock, EscribirListaTipo(ProductosPorLitro));
-
-        }
-        public void GuardarReceta()
-        {
-            List<Receta> ListaReceta = new List<Receta>();
-            Escribir(RUTA + ArchivoDeRecetas, EscribirListaTipo(ListaReceta));
-        }
+        
         public void GuardarComida()
         {
             List<Comida> ListaComida = new List<Comida>();
@@ -389,7 +371,11 @@ namespace Logica
         }
 
 
-
+        public void GuardarReceta()
+        {
+            List<Receta> Recetas = ListaDeRecetas;
+            Escribir(RUTA + ArchivoDeRecetas, EscribirListaTipo(Recetas));
+        }
         internal void CargarFiltros()
         {
             //FILTROS PRODUCTOS
@@ -413,21 +399,10 @@ namespace Logica
             GuardarProducto();
 
 
-            //Producto productoAListaDeSuper = new PorCantidad("5", MedidaProducto.XCantidad, "5", "noc", TipoCategoria.Fruta, 160, 10);
-            //Super super = new Super(productoAListaDeSuper);
-
-            ListaDeSupermercado = new List<string>();
-            ListaDeSupermercado.Add(producto4.Id.ToString());
-            ListaDeSupermercado.Add(producto7.Id.ToString());
-            //guardo los codigos
-
-            GuardarSuper();
-
-
 
             //FILTROS RECETAS=========================================================================================
 
-            
+            ListaDeRecetas = new List<Receta>();
             List<CodigoCantidad> CodigosCantidades = new List<CodigoCantidad>();
             CodigoCantidad codigoCantidad = new CodigoCantidad();
             codigoCantidad.CodigoIngrediente = "1";
@@ -437,7 +412,7 @@ namespace Logica
             ListaDeRecetas.Add(receta1);
             GuardarReceta();
 
-
+            
             //FILTROS SUPER====================================================================
 
             // Super super = new Super()

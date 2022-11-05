@@ -22,7 +22,7 @@ namespace Logica
         public bool Saludable { get; set; }
         public string Nombre { get; set; }
         //public int CantidadPersonas { get; set; } //Me dice para cuantas personas es la receta
-        // public List<CodigoCantidad> Ingredientes { get; set; }
+        public List<CodigoCantidad> Ingredientes { get; set; }
         public List<string> ID { get; set; }
         //public List<Receta> ListaDeRecetas { get; set; }
         //public List<Producto> Productos { get; set; }
@@ -36,7 +36,7 @@ namespace Logica
             this.Saludable = pSaludable;
             this.Nombre = pNombre;
             //this.CantidadPersonas = pCantPersonas;
-            //this.Ingredientes = CodigoCantidad;
+            this.Ingredientes = CodigoCantidad;
         }
 
         //public void AgregarNuevoProductoAReceta(CodigoCantidad codigoCantidad)
