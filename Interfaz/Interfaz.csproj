@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F10120A8-695A-46C0-B6AD-E402A8016F76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interfaz</RootNamespace>
+    <AssemblyName>Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEspecificarCantidadReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecificarCantidadReceta.Designer.cs">
+      <DependentUpon>frmEspecificarCantidadReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaComida.Designer.cs">
+      <DependentUpon>frmAltaComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrillaComidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrillaComidas.Designer.cs">
+      <DependentUpon>frmGrillaComidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaRecetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaRecetas.Designer.cs">
+      <DependentUpon>frmAltaRecetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrillaSupermercado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrillaSupermercado.Designer.cs">
+      <DependentUpon>frmGrillaSupermercado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilidadesDeGrillasYControl\ControlTipiadoYCampos.cs" />
+    <Compile Include="frmAltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaProducto.designer.cs">
+      <DependentUpon>frmAltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrillaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrillaProducto.designer.cs">
+      <DependentUpon>frmGrillaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilidadesDeGrillasYControl\UtilidadesDeGrillas.cs" />
+    <EmbeddedResource Include="frmAltaComida.resx">
+      <DependentUpon>frmAltaComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspecificarCantidadReceta.resx">
+      <DependentUpon>frmEspecificarCantidadReceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaProducto.resx">
+      <DependentUpon>frmAltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrillaComidas.resx">
+      <DependentUpon>frmGrillaComidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrillaProducto.resx">
+      <DependentUpon>frmGrillaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrillaSupermercado.resx">
+      <DependentUpon>frmGrillaSupermercado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaRecetas.resx">
+      <DependentUpon>frmAltaRecetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogicaDeNegocio\LogicaDeNegocio.csproj">
+      <Project>{2fd13674-e0fb-46a1-9178-4980ef0349b1}</Project>
+      <Name>LogicaDeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

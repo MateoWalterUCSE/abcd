@@ -1,0 +1,1 @@
+[{"TipoMedida":2,"Id":"2","Categoria":5,"Nombre":"FALDA","Precio":19.9,"Stock":"6.4","StockMinimo":5},{"TipoMedida":2,"Id":"6","Categoria":6,"Nombre":"MERLUZA","Precio":1.500,"Stock":"4","StockMinimo":5}]

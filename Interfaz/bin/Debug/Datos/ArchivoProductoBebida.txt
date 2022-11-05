@@ -1,0 +1,1 @@
+[{"Tipo":1,"TipoMedida":0,"Id":"8","Categoria":1,"Nombre":"COCA COLA","Precio":300.0,"Stock":"3","StockMinimo":1}]
